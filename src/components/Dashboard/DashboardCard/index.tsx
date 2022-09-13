@@ -6,16 +6,23 @@ interface DashboardCardProps {
   Icon: React.ForwardRefExoticComponent<
     IconProps & React.RefAttributes<SVGSVGElement>
   >;
+  title: string;
+  amount: number;
 }
 
-export function DashboardCard({ Icon, type }: DashboardCardProps) {
+export function DashboardCard({
+  Icon,
+  type,
+  title,
+  amount,
+}: DashboardCardProps) {
   return (
-    <DashboardCardContainer>
+    <DashboardCardContainer type={type}>
       <Header type={type}>
-        <Title>Entradas</Title>
+        <Title>{title}</Title>
         <Icon />
       </Header>
-      <Amount>R$ 17.400,00</Amount>
+      <Amount>{amount}</Amount>
     </DashboardCardContainer>
   );
 }

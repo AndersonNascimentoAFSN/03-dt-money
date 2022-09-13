@@ -1,4 +1,4 @@
-import { Header, Dashboard } from "../../components";
+import { Header, Dashboard, TransactionTable } from "../../components";
 
 import { Container } from "./styles";
 
@@ -7,6 +7,7 @@ export function Transactions() {
     <Container>
       <Header />
       <Dashboard />
+      <TransactionTable />
     </Container>
   );
 }

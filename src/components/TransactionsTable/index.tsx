@@ -1,6 +1,6 @@
 import { TableContent } from "./TableContent";
 
-import { TransactionsTableContainer, Table } from "./styles";
+import { Table } from "./styles";
 
 const transactions = [
   {
@@ -19,7 +19,6 @@ const transactions = [
 
 export function TransactionTable() {
   return (
-    <TransactionsTableContainer>
       <Table>
         <tbody>
           {transactions.map((transaction) => (
@@ -32,6 +31,5 @@ export function TransactionTable() {
           ))}
         </tbody>
       </Table>
-    </TransactionsTableContainer>
   );
 }

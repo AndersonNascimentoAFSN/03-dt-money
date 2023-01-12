@@ -1,13 +1,16 @@
-import { Header, Dashboard, TransactionTable } from "../../components";
+import { Header, Dashboard, TransactionTable, SearchForm } from "../../components";
 
 import { Container } from "./styles";
 
 export function Transactions() {
   return (
-    <Container>
+    <>
       <Header />
       <Dashboard />
+    <Container>
+      <SearchForm />
       <TransactionTable />
     </Container>
+    </>
   );
 }
